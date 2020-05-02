@@ -1,0 +1,21 @@
+
+<h3>List Todo Activity</h3>
+<br>
+<table class="table table-hover table-border table-striped">
+    <thead>
+        <tr>
+            <th>description</th>
+            <th>Done</th>
+            <th>Is Completed?</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let listTodo of todos">
+            <td>{{listTodo.description}}</td>
+            <td>{{listTodo.myTime | date}}</td>
+            <td>{{listTodo.done}}</td>
+            
+        </tr>
+        
+    </tbody>
+</table>
